@@ -1,2 +1,1 @@
-# soc
-Stream of Code
+# System on a Consciousness
