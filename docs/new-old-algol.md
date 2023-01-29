@@ -11,4 +11,4 @@ I was thinking about some of the algorithms behind technologies everyone has bee
 And then I decided to learn more about them, by coding and writing about them. The first series will be on statistical algorithms, you know, some of the things behind machine learning techniques.
 
 ## Statistical algorithms
-[Logistic Regression (logit)](docs/logistic-regression.md)
+[Logistic Regression (logit)](logistic-regression.md)
