@@ -2,6 +2,8 @@
 layout: default
 title: New Old Algorithms
 nav_order: 2
+has_children: true
+permalink: docs/new-old-algon
 ---
 
 # New Old Algorithms
