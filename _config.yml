@@ -30,7 +30,7 @@ aux_links:
   "C++ Performance Articles":
     - "https://bignacio.github.io/cpp-articles"
 
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # left panel navigation
 # nav_external_links:
