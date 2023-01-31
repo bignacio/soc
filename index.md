@@ -9,4 +9,4 @@ permalink: /
 
 Some words, some code.
 
-[New Old Algorithms](docs/new-old-algol/new-old-algol.md)
+[New Old Algorithms](docs/new-old-algol)
