@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: minimal
 title: Logistic Regression
 parent:  New Old Algorithms
 ---
