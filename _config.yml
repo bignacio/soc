@@ -27,7 +27,7 @@ enable_copy_code_button: true
 heading_anchors: true
 
 aux_links:
-  "C++ Performance Articles":
+  "Also from Bira Ignacio":
     - "https://bignacio.github.io/cpp-articles"
 
 aux_links_new_tab: true
