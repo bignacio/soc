@@ -73,3 +73,6 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+
+footer_content: "By Bira Ignacio. Distributed under the <a href=\" https://github.com/bignacio/soc/blob/main/LICENSE\">MIT license.</a>"
