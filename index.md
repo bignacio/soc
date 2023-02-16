@@ -10,4 +10,5 @@ permalink: /
 Some words, some code.
 
 [New Old Algorithms](docs/new-old-algol)
+
 [Articles and Ideas](docs/articles)
