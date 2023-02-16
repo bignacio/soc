@@ -9,7 +9,7 @@ permalink: docs/articles
 
 As software engineers and bearers of the logical mind, we like rules, objective principles that can get us from A to Z safely and quickly.
 
-Whether it's the SOLID principles, Onion Architecture or DRY (SOD? DOS? yeah I need to work on good acronym of acronyms), these tools give was a way to look at problems such that we can apply known solutions to them.
+Whether it's the SOLID principles, Onion Architecture or DRY (SOD? DOS? yeah I need to work on good acronym of acronyms for this), these tools give was a way to look at problems such that we can apply known solutions to them.
 
 Which is great, but I'll propose that none of that matters that much. Everything we do in our professional lives is ultimately, for people.
 And in many cases for software engineers, our current and will be friends.
