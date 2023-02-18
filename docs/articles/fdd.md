@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Friendship Driven Development
-nav_order: 3
-permalink: docs/articles
+parent: Articles
 ---
 
 # Friendship Driven Development
