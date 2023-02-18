@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Friendship Driven Development
-parent: Articles
+parent: Articles and Ideas
 ---
 
 # Friendship Driven Development
