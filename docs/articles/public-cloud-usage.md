@@ -1,3 +1,9 @@
+---
+layout: default
+title: Public Cloud Cost Reduction
+parent: Articles
+---
+
 # Can I do anything to reduce my already slim cloud costs?
 
 _February 2023_
