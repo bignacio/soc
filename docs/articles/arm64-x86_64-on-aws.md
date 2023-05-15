@@ -76,8 +76,11 @@ Response time in milliseconds
 |Max|92.4|95.0|
 
 Distribution x86_64
+
 ![x86_64](assets/python-x86.png "x86_64")
+
 Distribution arm64
+
 ![arm64](assets/python-arm.png "arm64")
 
 On the surface it appears that the x86 architecture performed a 2-3% better at the high percentile but up to 99.5, Arm was actually 8% faster.
@@ -96,8 +99,11 @@ Response time in milliseconds
 |Max|17.3|23.3|
 
 Distribution x86_64
+
 ![x86_64](assets/java-x86.png "x86_64")
+
 Distribution arm64
+
 ![arm64](assets/java-arm.png "arm64")
 
 Again we see the same pattern, where the Arm test performs better up until the 99.5 percentile but not so much after that.
@@ -118,8 +124,11 @@ Response time in milliseconds
 |Max|15.6|17.0|
 
 Distribution x86_64
+
 ![x86_64](assets/go-x86.png "x86_64")
+
 Distribution arm64
+
 ![arm64](assets/go-arm.png "arm64")
 
 The same pattern again with a 8% slower response time for Arm at the 99.99998th percentile.
@@ -140,8 +149,11 @@ Response time in milliseconds
 
 
 Distribution x86_64
+
 ![x86_64](assets/rust-x86.png "x86_64")
+
 Distribution arm64
+
 ![arm64](assets/rust-arm.png "arm64")
 
 Much like the results for go, thought the histograms suggest a much smaller right tail for Arm.
