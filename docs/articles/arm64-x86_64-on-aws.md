@@ -77,7 +77,7 @@ Response time in milliseconds
 
 Distribution x86_64
 
-![x86_64](../../assets/images/python-x86.png "x86_64")
+![x86_64](../../../assets/images/python-x86.png "x86_64")
 
 Distribution arm64
 
