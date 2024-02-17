@@ -46,7 +46,7 @@ Ok that's not entirely correct, the first thing we actually do is check `ptr` is
 
 But let's continue with reading the number of strings
 
-```
+```c++
 uint8_t count = *(uint8_t*)(ptr);
 ```
 
@@ -57,7 +57,7 @@ Usually `clang-tidy` with a solid choice of checks and **also** run with `--warn
 
 And then we get this
 
-```
+```c++
 error: do not use C-style cast to convert between unrelated types [cppcoreguidelines-pro-type-cstyle-cast,-warnings-as-errors]
     uint8_t count = *(uint8_t*)(ptr);
 ```
@@ -66,7 +66,7 @@ The [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/) are prett
 
 Thankfully, C++ 20 introduced `bit_cast` (granted, for those who can use C++ 20) which solves this particular problem for us very nicely.
 
-```
+```c++
 auto count = bit_cast<uint8_t>(*ptr);
 ```
 
@@ -75,7 +75,7 @@ Now that I know how many strings I have in the data, I just need to read the len
 
 In my read loop, I start with something like this
 
-```
+```c++
 auto stringLen = bit_cast<uint16_t>(*ptr);
 
 std::string value(ptr+sizeof(uint16_t), stringLen);
@@ -86,7 +86,7 @@ And then we try to compile/lint it and all alarms go off.
 First, we can't bit_cast `*(char*  ptr)` to `uint16_t` because `char` and `uint16_t` have different lengths.
 I could static cast `char* ptr` to `uint16_t* ptr` and that would probably work but there's another problem in that code.
 
-```
+```c++
  error: do not use pointer arithmetic [cppcoreguidelines-pro-bounds-pointer-arithmetic,-warnings-as-errors]
     string value(ptr+sizeof(uint16_t), len);
 ```
@@ -95,7 +95,7 @@ Pointer arithmetic is also discouraged. So maybe we can solve both cases with th
 
 It goes like this
 
-```
+```c++
 const std::span<char> input(ptr, length);
 
 auto count = bit_cast<uint8_t>(input.front());
@@ -126,7 +126,7 @@ As mentioned above, there are other thing to consider when it comes to memory sa
 Is `std::span` a zero cost abstraction? In my experience, for cases like this it can be.
 Let's look at a more general simple example in [Compiler Explorer](https://godbolt.org/z/83s4W1TPK), comparing classic pointer casting and arithmetic against the use of `std::span` and `std::copy_n`
 
-```
+```c++
 int classic(const char* ptr) {
     int val = *((int*)ptr);
 
@@ -157,7 +157,7 @@ int tidyfied_skip(const char *ptr, size_t len, int pos){
 ```
 
 For `x8_64`, both clang (17) and gcc (13) generate assembly outputs like this
-```
+```c++
 classic(char const*):
         mov     eax, DWORD PTR [rdi]
         ret
@@ -178,7 +178,7 @@ Which seem pretty good to me.
 
 Even a generic version, for trivially copiable types, seem to work well (again, on x86_64)
 
-```
+```c++
 template<typename T>
 T generic_convert(const char *ptr, size_t len, int pos) {
     T val;
@@ -202,7 +202,7 @@ trivially_copiable parse_generic(const char *ptr, size_t len, int pos){
 ```
 
 The code above generates the following assembly
-```
+```c++
 parse_generic(char const*, unsigned long, int):
         movsx   rdx, edx
         add     rdi, rdx
