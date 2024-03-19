@@ -8,8 +8,10 @@ parent: Articles
 
 _March 2024_
 
-A few months ago, I needed to write a simple REST server test, and I immediately wondered, can I accomplish this in C++?
-That was a question that quickly became, is it worthwhile to implement it in C++ ?
+A coworker used to joke that most web applications just ferry JSON around. There's probably a good amount of truth in that joke.
+That got me thinking, could C++ be used for such types of applications? And, is it worthwhile to implement a REST (or something like that) backend in C++ ?
+
+([find some sample for that here](code/positivecpp/){:target="_blank"}).
 
 Probably yes, but that's not what I want to talk about. I want to explore how C++ is often depicted as a complex and risky language. At times, it is almost feared, but it doesn't have to be.
 
@@ -94,4 +96,4 @@ While it's long been known for its use in high-performance and low-level applica
 
 Programming languages often become associated with specific domains, and usually, there are good reasons for that. Ultimately, it's about finding the best and most suitable tool for the job.
 
-So, give it a shot, and you might discover that C++ is exactly the tool you need.
+All in all, always be positive.
