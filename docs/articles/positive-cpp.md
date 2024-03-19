@@ -1,15 +1,15 @@
 ---
 layout: default
-title: C++ is just like any other programming language
+title: A positive approach to developing in C++
 parent: Articles
 ---
 
-# C++ (and its ecosystem) is just like any other programming language (and their ecosystems)
+# A positive approach to developing in C++
 
 _March 2024_
 
 A few months ago, I needed to write a simple REST server test, and I immediately wondered, can I accomplish this in C++?
-That was a question that quickly became, is it worthwhile to implement it in C++??
+That was a question that quickly became, is it worthwhile to implement it in C++ ?
 
 Probably yes, but that's not what I want to talk about. I want to explore how C++ is often depicted as a complex and risky language. At times, it is almost feared, but it doesn't have to be.
 
