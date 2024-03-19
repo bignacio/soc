@@ -8,12 +8,13 @@ parent: Articles
 
 _March 2024_
 
-A coworker used to joke that most web applications just ferry JSON around. There's probably a good amount of truth in that joke.
-That got me thinking, could C++ be used for such types of applications? And, is it worthwhile to implement a REST (or something like that) backend in C++ ?
+A coworker used to joke that most web applications just ferry JSON from one system to another.
 
-([find some sample for that here](https://github.com/bignacio/soc/tree/cpp_and_languages/docs/articles/code/positivecpp){:target="_blank"}).
+There's probably a good amount of truth in that joke.
 
-Probably yes, but that's not what I want to talk about. I want to explore how C++ is often depicted as a complex and risky language. At times, it is almost feared, but it doesn't have to be.
+That got me thinking, could C++ be used for such types of applications? And, is it worthwhile to implement a REST (or something like that) backend in C++ ? (find some sample for that here{:target="_blank"}).
+
+The answer is probably yes, but that's not what I want to talk about. I want to explore how C++ is often depicted as a complex and risky language. At times, it is almost feared, but it doesn't have to be.
 
 Developing in C++ can be approached with the same level of care (or concern) as any other programming language or tool.
 
@@ -44,7 +45,7 @@ Here's a revised version of your points:
 1. **Avoid Pointers**: Pointers aren't necessary in most of the code we write, if not all.
 2. **Use Values**: Assign values, pass everything by value, and return by value (more on that below).
 3. **Then pass by reference**: If necessary, consider passing by reference, which might be needed at some point.
-4. **Smart Pointers**: Only resort to smart pointers (unique pointers, shared pointers, etc.) if absolutely necessary. Make sure to have a good understanding of how they work and when to use them before diving in.
+4. **And use Smart Pointers**: Only resort to smart pointers (unique pointers, shared pointers, etc.) if absolutely necessary. Make sure to have a good understanding of how they work and when to use them before diving in.
 
 **Notes on working with values only**: C++ developers (and even linters!) will point out that using values for everything can result in significant data copying and affect program performance. That is true, and I'll just note that, like any optimization, don't worry about it until you have to worry about it. Measure first, and if it works for you, move on to the next problem.
 
