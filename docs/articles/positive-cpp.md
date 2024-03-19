@@ -11,7 +11,7 @@ _March 2024_
 A coworker used to joke that most web applications just ferry JSON around. There's probably a good amount of truth in that joke.
 That got me thinking, could C++ be used for such types of applications? And, is it worthwhile to implement a REST (or something like that) backend in C++ ?
 
-([find some sample for that here](code/positivecpp/){:target="_blank"}).
+([find some sample for that here](https://github.com/bignacio/soc/tree/cpp_and_languages/docs/articles/code/positivecpp){:target="_blank"}).
 
 Probably yes, but that's not what I want to talk about. I want to explore how C++ is often depicted as a complex and risky language. At times, it is almost feared, but it doesn't have to be.
 
