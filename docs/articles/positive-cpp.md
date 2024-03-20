@@ -12,7 +12,7 @@ A coworker used to joke that most web applications just ferry JSON from one syst
 
 There's probably a good amount of truth in that joke.
 
-That got me thinking, could C++ be used for such types of applications? And, is it worthwhile to implement a REST (or something like that) backend in C++ ? (find some sample for that here{:target="_blank"}).
+That got me thinking, could C++ be used for such types of applications? And, is it worthwhile to implement a REST (or something like that) backend in C++ ? ([find some examples here](https://github.com/bignacio/soc/tree/main/docs/articles/code/positivecpp){:target="_blank"}).
 
 The answer is probably yes, but that's not what I want to talk about. I want to explore how C++ is often depicted as a complex and risky language. At times, it is almost feared, but it doesn't have to be.
 
@@ -32,7 +32,7 @@ These types and data structures behave exactly as we'd anticipate, making it eas
 
 ### Memory management
 
-Memory management and safety in C++ have recently garnered significant attention, with [expert grade material](https://github.com/BjarneStroustrup/profiles) making compelling arguments for safer C++ programming practices.
+Memory management and safety in C++ have recently garnered significant attention, with [expert grade material](https://github.com/BjarneStroustrup/profiles){:target="_blank"} making compelling arguments for safer C++ programming practices.
 
 Rather than trying to reword the same arguments, I'll offer my straightforward and incremental approach to writing memory-safe code in C++.
 
